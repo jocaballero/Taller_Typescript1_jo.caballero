@@ -12,37 +12,14 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-center">Jhorman Caballero</h1>
-                    <div class="text-center">
-                        <img class="img-fluid max-width: 100% height: auto" src="images/Memoji.jpeg" alt="Avatar">
+                    <div id="studentImage" class="text-center">
+                        
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <table class="table table-bordered table-hover">
-                                <thead class="thead-dark">
-                                    <th>Datos Personales</th>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-info">
-                                        <td>Código</td>
-                                        <td>201812920</td>
-                                    </tr>
-                                    <tr class="table-info">
-                                        <td>Cédula</td>
-                                        <td>1004922494</td>
-                                    </tr>
-                                    <tr class="table-info">
-                                        <td>Edad</td>
-                                        <td>19 Años</td>
-                                    </tr>
-                                    <tr class="table-info">
-                                        <td>Dirección</td>
-                                        <td>Calle 19 #2A-10</td>
-                                    </tr class="table-info">
-                                    <tr class="table-info">
-                                        <td>Teléfono</td>
-                                        <td>5849585</td>
-                                    </tr>
-                                </tbody>
+                            <h4>Datos Personales</h4>
+                            <table id="datosPersonales" class="table table-bordered table-hover">
+
                             </table>
                         </div>
                     </div>
@@ -52,13 +29,30 @@
                         <div class="card-body">
                             <h2>Cursos Actuales</h2>
                             <form style="margin:10px;">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6>Filtrar Por Nombre</h6>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>Filtrar Por Numero De Creditos</h6>
+                                    </div>
+                                </div>
                                 <div class="form-row">
-                                <div class="col">
-                                    <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
-                                </div>
-                                <div class="col">
-                                    <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
-                                </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="min-credits" placeholder="Min">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="max-credits" placeholder="Max">
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="button-filterByCreditsRange" class="btn btn-success">Aplicar</button>
+                                    </div>
                                 </div>
                             </form>
                             <table class="table">
