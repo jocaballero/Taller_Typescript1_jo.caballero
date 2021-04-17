@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller 1</title>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container padding-top">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Jhorman Caballero</h1>
+                    <div class="text-center">
+                        <img class="img-fluid max-width: 100% height: auto" src="images/Memoji.jpeg" alt="Avatar">
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <th>Datos Personales</th>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-info">
+                                        <td>Código</td>
+                                        <td>201812920</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <td>Cédula</td>
+                                        <td>1004922494</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <td>Edad</td>
+                                        <td>19 Años</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <td>Dirección</td>
+                                        <td>Calle 19 #2A-10</td>
+                                    </tr class="table-info">
+                                    <tr class="table-info">
+                                        <td>Teléfono</td>
+                                        <td>5849585</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Cursos Actuales</h2>
+                            <form style="margin:10px;">
+                                <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                                </div>
+                                <div class="col">
+                                    <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                                </div>
+                                </div>
+                            </form>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th>Curso</th>
+                                    <th>Profesor</th>
+                                    <th>Créditos</th>
+                                </tr>
+                                </thead>
+                                <tbody id="courses" class="table-info">
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div id="tcreditos" class="col-8">
+                                    <h4>Total Creditos:</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 id="total-credits"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./scripts/course.js" ></script>
+        <script type="module" src="./scripts/dataCourses.js" ></script>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
